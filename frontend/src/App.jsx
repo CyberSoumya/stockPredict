@@ -10,7 +10,7 @@ function App() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("http://127.0.0.1:5000/predict", {
+      const res = await axios.post("http://192.168.29.211/predict", {
         symbol,
       });
       setData(res.data);
